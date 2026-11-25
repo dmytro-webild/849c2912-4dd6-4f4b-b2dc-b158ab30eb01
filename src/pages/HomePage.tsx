@@ -214,7 +214,7 @@ export default function HomePage() {
               date: "2025",
               description: "High-grade silicone joint sealants applied to exterior concrete panels on a commercial facility.",
               href: "#contact-dark-form-card",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371675-tazytfpm.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371677-sxmksi93.jpg",
               imageAlt: "brick wall with window and scaffolding"
             },
             {
@@ -241,7 +241,7 @@ export default function HomePage() {
               date: "2025",
               description: "Grinding out deteriorated mortar joints and refilling with matching breathable mortar.",
               href: "#contact-dark-form-card",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618667733-pgau9lga.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371673-pxa0lvu8.jpg",
               imageAlt: "Classic Beautiful Textured Brick Wall"
             }
           ]}
