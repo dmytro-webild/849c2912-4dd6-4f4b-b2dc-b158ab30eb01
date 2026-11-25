@@ -166,9 +166,12 @@ const FeaturesBentoWidgets = ({ ariaLabel, tag, title, description, items, backg
                     <motion.div
                       key={rowIndex}
                       variants={{ hidden: { opacity: 0, y: 24 }, shown: { opacity: 1, y: 0, transition: { ...small, delay: 0.3 + rowIndex * 0.1 } } }}
-                      className="flex items-center justify-between gap-[16px] rounded-[var(--radius-image)] bg-card px-[16px] py-[14px] text-left text-card-foreground"
+                      className={cn(
+                        "flex items-center rounded-[var(--radius-image)] bg-card px-[14px] sm:px-[16px] py-[12px] sm:py-[14px] text-card-foreground",
+                        row.value ? "justify-between gap-[16px] text-left" : "justify-center text-center",
+                      )}
                     >
-                      <p className="min-w-0 text-[length:var(--text-body)] leading-[1.4] [overflow-wrap:anywhere]">{row.label}</p>
+                      <p className={cn("min-w-0 text-[length:var(--text-body)] leading-[1.4] tracking-tight [overflow-wrap:anywhere]", !row.value && "font-medium text-center")}>{row.label}</p>
                       {row.value && (
                         <p className={cn("shrink-0 whitespace-nowrap rounded-full px-[10px] py-[2px] text-[length:var(--text-small)] leading-[1.5]", rowIndex === 0 ? "bg-accent text-accent-foreground" : "bg-background text-foreground")}>
                           {row.value}
