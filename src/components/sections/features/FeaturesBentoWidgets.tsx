@@ -161,22 +161,14 @@ const FeaturesBentoWidgets = ({ ariaLabel, tag, title, description, items, backg
                   {item.valueLabel && <p className={cn("text-[length:var(--text-body)] leading-[1.4]", photo ? "text-white/60" : "text-deep-foreground/60")}>{item.valueLabel}</p>}
                 </motion.div>
               ) : rows.length > 0 ? (
-                <div className="mt-auto flex w-full max-w-[24rem] flex-col gap-[8px] pt-[28px]">
+                <div className="mt-auto flex w-full max-w-[24rem] flex-col items-center gap-[8px] pt-[28px]">
                   {rows.map((row, rowIndex) => (
                     <motion.div
                       key={rowIndex}
                       variants={{ hidden: { opacity: 0, y: 24 }, shown: { opacity: 1, y: 0, transition: { ...small, delay: 0.3 + rowIndex * 0.1 } } }}
-                      className={cn(
-                        "flex items-center rounded-[var(--radius-image)] bg-card px-[14px] sm:px-[16px] py-[12px] sm:py-[14px] text-card-foreground",
-                        row.value ? "justify-between gap-[16px] text-left" : "justify-center text-center",
-                      )}
+                      className="flex w-full items-center justify-center rounded-[var(--radius-image)] bg-card px-[14px] sm:px-[16px] py-[12px] sm:py-[14px] text-center text-card-foreground"
                     >
-                      <p className={cn("min-w-0 text-[length:var(--text-body)] leading-[1.4] tracking-tight [overflow-wrap:anywhere]", !row.value && "font-medium text-center")}>{row.label}</p>
-                      {row.value && (
-                        <p className={cn("shrink-0 whitespace-nowrap rounded-full px-[10px] py-[2px] text-[length:var(--text-small)] leading-[1.5]", rowIndex === 0 ? "bg-accent text-accent-foreground" : "bg-background text-foreground")}>
-                          {row.value}
-                        </p>
-                      )}
+                      <p className="w-full text-center text-[length:var(--text-body)] font-medium leading-[1.4] tracking-tight [overflow-wrap:anywhere]">{row.label}</p>
                     </motion.div>
                   ))}
                 </div>
