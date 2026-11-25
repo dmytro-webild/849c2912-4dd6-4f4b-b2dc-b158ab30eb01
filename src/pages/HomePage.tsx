@@ -94,7 +94,7 @@ export default function HomePage() {
             {
               title: "Waterproofing",
               description: "Proactive exterior sealing engineered to protect walls against Wisconsin freeze-thaw cycles.",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371677-dvghoh2u.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371677-dvghoh2u.jpg?_wi=1",
               imageAlt: "freshly caulked vertical brick joint"
             },
             {
@@ -115,7 +115,7 @@ export default function HomePage() {
             {
               title: "Tuckpointing",
               description: "Removing deteriorated mortar and installing fresh joints to restore brick structural integrity.",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371673-pxa0lvu8.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371673-pxa0lvu8.jpg?_wi=1",
               imageAlt: "Stonecutter closeup"
             },
             {
@@ -214,7 +214,7 @@ export default function HomePage() {
               date: "2025",
               description: "High-grade silicone joint sealants applied to exterior concrete panels on a commercial facility.",
               href: "#contact-dark-form-card",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371677-dvghoh2u.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371677-dvghoh2u.jpg?_wi=2",
               imageAlt: "brick wall with window and scaffolding"
             },
             {
@@ -241,7 +241,7 @@ export default function HomePage() {
               date: "2025",
               description: "Grinding out deteriorated mortar joints and refilling with matching breathable mortar.",
               href: "#contact-dark-form-card",
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371673-pxa0lvu8.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371673-pxa0lvu8.jpg?_wi=2",
               imageAlt: "Classic Beautiful Textured Brick Wall"
             }
           ]}
