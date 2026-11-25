@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useSpring, useTransform, type MotionValue } from "motion/react";
-import { List } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import MakroTitle from "@/components/kit/MakroTitle";
@@ -103,7 +102,6 @@ const HeroBoardFrame = ({
       <div className="relative mx-auto flex w-[var(--container)] flex-col items-center text-center">
         {tag && (
           <motion.div {...appear(24, 0)} className="flex max-w-full items-center gap-[0.5rem] rounded-full bg-card px-[0.875rem] py-[0.375rem] text-card-foreground">
-            <List aria-hidden="true" className="size-4 shrink-0 opacity-75" strokeWidth={1.5} />
             <p className="truncate text-[length:var(--text-label)] leading-[1.5]">{tag}</p>
           </motion.div>
         )}
