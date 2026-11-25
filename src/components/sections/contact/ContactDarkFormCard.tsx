@@ -40,7 +40,7 @@ const ImagePanel = ({ src, alt, reduce }: { src: string; alt: string; reduce: bo
       initial={reduce ? false : { opacity: 0, y: 72 }}
       animate={go ? { opacity: 1, y: 0 } : undefined}
       transition={spring(0.2)}
-      className="relative aspect-[16/9] min-w-0 overflow-hidden rounded-[var(--radius-card)] sm:aspect-[4/3] lg:aspect-auto h-[220px] sm:h-[340px] lg:h-full"
+      className="relative min-w-0 max-w-xs sm:max-w-sm lg:max-w-md w-full overflow-hidden rounded-[var(--radius-card)] h-[110px] sm:h-[150px] lg:h-[180px] self-center justify-self-center my-auto"
     >
       <MotionMedia
         src={src}
@@ -50,7 +50,7 @@ const ImagePanel = ({ src, alt, reduce }: { src: string; alt: string; reduce: bo
         initial={reduce ? false : { scale: 1.18 }}
         animate={go ? { scale: 1 } : undefined}
         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-        className="absolute inset-0 size-full object-cover object-[center_35%]"
+        className="absolute inset-0 size-full object-cover object-center"
       />
     </motion.div>
   );
