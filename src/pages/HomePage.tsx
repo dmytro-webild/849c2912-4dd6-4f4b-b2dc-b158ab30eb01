@@ -102,16 +102,13 @@ export default function HomePage() {
               description: "Full-spectrum surface protection and joint renewal for commercial and residential buildings.",
               rows: [
                 {
-                  label: "Commercial Caulking",
-                  value: "Available"
+                  label: "Commercial Caulking"
                 },
                 {
-                  label: "Residential Tuckpointing",
-                  value: "Available"
+                  label: "Residential Tuckpointing"
                 },
                 {
-                  label: "Brick & Block Repair",
-                  value: "Available"
+                  label: "Brick & Block Repair"
                 }
               ]
             },
