@@ -54,11 +54,11 @@ const FooterTrayWordmark = ({ brand, logoSrc, wordmark, columns = [], copyright,
     <footer aria-label={ariaLabel ?? `${brand} footer`} className={cn("relative bg-background pt-[calc(var(--section-space)/2)] text-foreground", className)}>
       <div className="relative isolate mx-[var(--panel-inset)] mb-[var(--panel-inset)] overflow-hidden rounded-[var(--radius-card)] bg-card pt-[clamp(2.5rem,5vw,4.5rem)] text-card-foreground">
         <div className="mx-auto grid w-[var(--container)] grid-cols-1 gap-x-[var(--gap)] gap-y-[clamp(2.5rem,5vw,3.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-          <motion.a {...rise(0)} href="#" aria-label={brand} className="flex w-fit shrink-0 items-start">
+          <motion.a {...rise(0)} href="#" aria-label={brand} className="flex w-fit shrink-0 items-start max-w-[85vw]">
             {logoSrc ? (
-              <Media src={logoSrc} alt={brand} loading="lazy" decoding="async" className="h-[clamp(2.5rem,4vw,3.5rem)] w-auto max-w-[80vw] object-contain" />
+              <Media src={logoSrc} alt={brand} loading="lazy" decoding="async" className="h-[1.75rem] sm:h-[2.5rem] lg:h-[3.25rem] w-auto max-w-full object-contain" />
             ) : (
-              <p className="font-[family-name:var(--font-heading)] text-[length:var(--text-h2)] sm:text-[length:var(--text-h1)] font-bold leading-[1.2] tracking-[var(--heading-tracking)] [overflow-wrap:anywhere]">{brand}</p>
+              <p className="font-[family-name:var(--font-heading)] text-base sm:text-xl lg:text-[length:var(--text-h2)] font-bold leading-[1.2] tracking-[var(--heading-tracking)] [overflow-wrap:anywhere]">{brand}</p>
             )}
           </motion.a>
 
