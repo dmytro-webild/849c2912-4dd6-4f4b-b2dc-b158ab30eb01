@@ -54,11 +54,11 @@ const FooterTrayWordmark = ({ brand, logoSrc, wordmark, columns = [], copyright,
     <footer aria-label={ariaLabel ?? `${brand} footer`} className={cn("relative bg-background pt-[calc(var(--section-space)/2)] text-foreground", className)}>
       <div className="relative isolate mx-[var(--panel-inset)] mb-[var(--panel-inset)] overflow-hidden rounded-[var(--radius-card)] bg-card pt-[clamp(2.5rem,5vw,4.5rem)] text-card-foreground">
         <div className="mx-auto grid w-[var(--container)] grid-cols-1 gap-x-[var(--gap)] gap-y-[clamp(2.5rem,5vw,3.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-          <motion.a {...rise(0)} href="#" aria-label={brand} className="flex w-fit min-w-0 items-start">
+          <motion.a {...rise(0)} href="#" aria-label={brand} className="flex w-fit shrink-0 items-start">
             {logoSrc ? (
-              <Media src={logoSrc} alt={brand} loading="lazy" decoding="async" className="h-[clamp(2rem,3vw,2.5rem)] w-auto max-w-[60vw] object-contain" />
+              <Media src={logoSrc} alt={brand} loading="lazy" decoding="async" className="h-[clamp(2.5rem,4vw,3.5rem)] w-auto max-w-[80vw] object-contain" />
             ) : (
-              <p className="font-[family-name:var(--font-heading)] text-[length:var(--text-h3)] leading-[1.2] tracking-[var(--heading-tracking)] [overflow-wrap:anywhere]">{brand}</p>
+              <p className="font-[family-name:var(--font-heading)] text-[length:var(--text-h2)] sm:text-[length:var(--text-h1)] font-bold leading-[1.2] tracking-[var(--heading-tracking)] [overflow-wrap:anywhere]">{brand}</p>
             )}
           </motion.a>
 
@@ -100,7 +100,7 @@ const FooterTrayWordmark = ({ brand, logoSrc, wordmark, columns = [], copyright,
           <p ref={measureRef} className="invisible absolute left-0 top-0 w-max whitespace-pre font-[family-name:var(--font-heading)] text-[length:var(--text-display)] font-semibold leading-none tracking-[-0.07em]">
             {mark}
           </p>
-          <div style={{ fontSize: `calc(var(--text-display) * ${scale})` }} className="h-[0.78em] overflow-hidden">
+          <div style={{ fontSize: `calc(var(--text-display) * ${scale})` }} className="h-[1.1em] pb-[0.2em] overflow-hidden">
             <motion.p
               initial={reduce ? false : { y: "0.3em" }}
               whileInView={{ y: "0em" }}

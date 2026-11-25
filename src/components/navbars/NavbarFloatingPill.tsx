@@ -57,12 +57,12 @@ const NavbarFloatingPill = ({ brand, logoSrc, navItems, cta, menuText = "Menu", 
       <div
         className={`relative mx-auto w-[var(--container)] rounded-[var(--radius-card)] transition-colors duration-700 ${solid ? "bg-[color-mix(in_srgb,var(--card)_92%,transparent)] text-card-foreground backdrop-blur-[12px]" : "bg-transparent text-foreground"}`}
       >
-        <div className="flex h-[3.5rem] items-center justify-between gap-[var(--gap)] pl-[1rem] pr-[0.375rem] lg:pl-[1.25rem] lg:pr-[0.625rem]">
-          <a href="#" aria-label={brand} className="flex min-h-[44px] min-w-0 items-center">
+        <div className="flex h-[3.75rem] items-center justify-between gap-[var(--gap)] pl-[1rem] pr-[0.375rem] lg:pl-[1.25rem] lg:pr-[0.625rem]">
+          <a href="#" aria-label={brand} className="flex min-h-[44px] shrink-0 items-center">
             {logoSrc ? (
-              <img src={logoSrc} alt={brand} loading="eager" decoding="async" className="h-[2rem] w-auto max-w-[40vw] object-contain" />
+              <img src={logoSrc} alt={brand} loading="eager" decoding="async" className="h-[2.5rem] sm:h-[2.75rem] w-auto max-w-full object-contain" />
             ) : (
-              <p className="truncate font-[family-name:var(--font-heading)] text-[length:var(--text-body-lg)] leading-none tracking-[var(--heading-tracking)] pb-[0.2em] -mb-[0.2em]">{brand}</p>
+              <p className="whitespace-nowrap font-[family-name:var(--font-heading)] text-[length:var(--text-h3)] sm:text-[length:var(--text-h2)] font-bold leading-none tracking-[var(--heading-tracking)] text-foreground">{brand}</p>
             )}
           </a>
 
