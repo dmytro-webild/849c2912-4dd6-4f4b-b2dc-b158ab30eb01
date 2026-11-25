@@ -28,9 +28,10 @@ const FooterTrayWordmark = ({ brand, logoSrc, wordmark, columns = [], copyright,
   const boxRef = useRef<HTMLDivElement>(null);
   const measureRef = useRef<HTMLParagraphElement>(null);
   const [scale, setScale] = useState(1);
-  const mark = wordmark ?? brand;
+  const mark = wordmark;
 
   useLayoutEffect(() => {
+    if (!mark) return;
     const box = boxRef.current;
     const text = measureRef.current;
     if (!box || !text) return;
@@ -96,22 +97,24 @@ const FooterTrayWordmark = ({ brand, logoSrc, wordmark, columns = [], copyright,
           </a>
         </div>
 
-        <div ref={boxRef} aria-hidden="true" className="relative mx-auto mt-[clamp(1.5rem,4vw,3rem)] w-[var(--container)] min-w-0">
-          <p ref={measureRef} className="invisible absolute left-0 top-0 w-max whitespace-pre font-[family-name:var(--font-heading)] text-[length:var(--text-display)] font-semibold leading-none tracking-[-0.07em]">
-            {mark}
-          </p>
-          <div style={{ fontSize: `calc(var(--text-display) * ${scale})` }} className="h-[1.1em] pb-[0.2em] overflow-hidden">
-            <motion.p
-              initial={reduce ? false : { y: "0.3em" }}
-              whileInView={{ y: "0em" }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={spring}
-              className="whitespace-pre bg-linear-to-b from-foreground to-foreground/35 bg-clip-text font-[family-name:var(--font-heading)] font-semibold leading-none tracking-[-0.07em] text-transparent"
-            >
+        {mark && (
+          <div ref={boxRef} aria-hidden="true" className="relative mx-auto mt-[clamp(1.5rem,4vw,3rem)] w-[var(--container)] min-w-0">
+            <p ref={measureRef} className="invisible absolute left-0 top-0 w-max whitespace-pre font-[family-name:var(--font-heading)] text-[length:var(--text-display)] font-semibold leading-none tracking-[-0.07em]">
               {mark}
-            </motion.p>
+            </p>
+            <div style={{ fontSize: `calc(var(--text-display) * ${scale})` }} className="h-[1.1em] pb-[0.2em] overflow-hidden">
+              <motion.p
+                initial={reduce ? false : { y: "0.3em" }}
+                whileInView={{ y: "0em" }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={spring}
+                className="whitespace-pre bg-linear-to-b from-foreground to-foreground/35 bg-clip-text font-[family-name:var(--font-heading)] font-semibold leading-none tracking-[-0.07em] text-transparent"
+              >
+                {mark}
+              </motion.p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </footer>
   );

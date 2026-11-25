@@ -43,7 +43,6 @@ export default function Layout() {
       <footer data-webild-section="Footer" data-section="footer">
         <FooterTrayWordmark
           brand="Crack Fillers Caulking"
-          wordmark="Crack Fillers"
           columns={[
             {
               title: "Services",
