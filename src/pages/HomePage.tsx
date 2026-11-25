@@ -118,7 +118,7 @@ export default function HomePage() {
             {
               title: "Tuckpointing",
               description: "Removing deteriorated mortar and installing fresh joints to restore brick structural integrity.",
-              imageSrc: "https://img.b2bpic.net/free-photo/stonecutter-closeup_268835-4725.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618371673-pxa0lvu8.jpg",
               imageAlt: "Stonecutter closeup"
             },
             {
@@ -235,7 +235,7 @@ export default function HomePage() {
               date: "2025",
               description: "Replacing damaged clay bricks and repairing mortar joints on a residential exterior.",
               href: "#contact-dark-form-card",
-              imageSrc: "https://img.b2bpic.net/free-photo/photo-wall-texture-pattern_58702-16165.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618659753-0ha986uj.jpg",
               imageAlt: "Photo of wall texture pattern"
             },
             {
@@ -244,7 +244,7 @@ export default function HomePage() {
               date: "2025",
               description: "Grinding out deteriorated mortar joints and refilling with matching breathable mortar.",
               href: "#contact-dark-form-card",
-              imageSrc: "https://img.b2bpic.net/free-photo/classic-beautiful-textured-brick-wall_53876-23167.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618667733-pgau9lga.jpg",
               imageAlt: "Classic Beautiful Textured Brick Wall"
             }
           ]}
@@ -293,7 +293,7 @@ export default function HomePage() {
           }}
           submitText="Send Request"
           successText="Thank you. We will contact you with an estimate shortly."
-          imageSrc="https://img.b2bpic.net/free-photo/industrial-builder-works-with-professional-angle-grinder-cut-bricks-build-interior-walls-electrician_169016-5880.jpg"
+          imageSrc="https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618848413-p36fjel2.jpg"
           imageAlt="The industrial Builder works with a professional angle grinder to cut bricks and build interior walls. Electrician."
           ariaLabel="Get a free quote from Crack Fillers Caulking"
         />
