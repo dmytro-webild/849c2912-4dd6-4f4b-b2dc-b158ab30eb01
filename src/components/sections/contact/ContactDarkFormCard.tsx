@@ -91,13 +91,20 @@ const ContactDarkFormCard = ({
 
   return (
     <section ref={sectionRef} aria-label={ariaLabel ?? title} className={cn("relative py-[var(--section-space)] text-foreground", className)}>
-      <div className={cn("mx-auto grid w-[var(--container)] grid-cols-1 gap-x-[var(--gap)] gap-y-[clamp(2rem,4vw,3rem)] lg:grid-cols-2", !imageSrc && "lg:gap-x-[clamp(2rem,6vw,6rem)]")}>
-        <div className={cn("@container min-w-0", imageSrc && "lg:col-span-2")}>
+      <div
+        className={cn(
+          "mx-auto w-[var(--container)]",
+          imageSrc
+            ? "grid grid-cols-1 gap-x-[var(--gap)] gap-y-[clamp(2rem,4vw,3rem)] lg:grid-cols-2"
+            : "flex max-w-3xl flex-col items-center gap-[clamp(2rem,3.5vw,3rem)] text-center",
+        )}
+      >
+        <div className={cn("@container min-w-0 w-full", imageSrc ? "lg:col-span-2" : "text-center")}>
           <MakroTitle
             text={title}
             className={cn(
               "text-[length:min(var(--text-h1)*1.15,11cqw)] leading-[var(--heading-leading)] tracking-[var(--heading-tracking)] [font-family:var(--font-heading)] [font-weight:var(--heading-weight)]",
-              imageSrc ? "max-w-[18ch]" : "max-w-[12ch]",
+              imageSrc ? "max-w-[18ch]" : "mx-auto max-w-[20ch] text-center",
             )}
           />
         </div>
@@ -106,7 +113,7 @@ const ContactDarkFormCard = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "0px 0px -10% 0px" }}
           transition={spring(0.1)}
-          className="flex min-w-0 flex-col rounded-[var(--radius-card)] bg-deep p-2 text-deep-foreground"
+          className="flex w-full min-w-0 flex-col rounded-[var(--radius-card)] bg-deep p-2 text-deep-foreground text-left"
         >
           {formTitle && (
             <h3 className="px-[clamp(1rem,3vw,2.25rem)] pb-[clamp(1.25rem,2.4vw,2rem)] pt-[clamp(1.25rem,2.6vw,2.25rem)] text-balance text-[length:var(--text-h3)] leading-[1.2] tracking-[-0.03em] [font-family:var(--font-heading)] [font-weight:var(--heading-weight)] [overflow-wrap:anywhere]">

@@ -293,8 +293,6 @@ export default function HomePage() {
           }}
           submitText="Send Request"
           successText="Thank you. We will contact you with an estimate shortly."
-          imageSrc="https://storage.googleapis.com/webild/users/user_3CAbs2mtVAarsbwSrty8hTuKmCw/uploaded-1795618848413-p36fjel2.jpg"
-          imageAlt="The industrial Builder works with a professional angle grinder to cut bricks and build interior walls. Electrician."
           ariaLabel="Get a free quote from Crack Fillers Caulking"
         />
       </div>
