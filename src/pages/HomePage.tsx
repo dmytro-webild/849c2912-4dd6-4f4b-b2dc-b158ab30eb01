@@ -3,7 +3,6 @@ import FeaturesBentoWidgets from "@/components/sections/features/FeaturesBentoWi
 import PricingTrayPlans from "@/components/sections/pricing/PricingTrayPlans";
 import GalleryTiltCards from "@/components/sections/gallery/GalleryTiltCards";
 import AboutStatementIconRow from "@/components/sections/about/AboutStatementIconRow";
-import TestimonialSpotlightCarousel from "@/components/sections/testimonial/TestimonialSpotlightCarousel";
 import ContactDarkFormCard from "@/components/sections/contact/ContactDarkFormCard";
 import ScrollToneBackdrop from "@/components/kit/ScrollToneBackdrop";
 import LoaderChipFill from "@/components/loaders/LoaderChipFill";
@@ -271,66 +270,6 @@ export default function HomePage() {
               icon: "MapPin",
               title: "Locally Owned Since 2014",
               description: "Proudly serving property owners from Milwaukee to Green Bay with dependable service."
-            }
-          ]}
-        />
-      </div>
-
-      <div id="customers" data-webild-section="TestimonialSpotlightCarousel" data-webild-section-id="TestimonialSpotlightCarousel-1" data-section="customers">
-        <TestimonialSpotlightCarousel
-          tag="Commercial Projects"
-          title="Wisconsin Commercial Masonry Case Studies"
-          items={[
-            {
-              company: "Green Bay Logistics",
-              quote: "Crack Fillers completed exterior wall tuckpointing and silicone joint sealing across our distribution center, preventing moisture intrusion before winter.",
-              name: "Daniel Murphy",
-              role: "Property Manager",
-              imageSrc: "https://img.b2bpic.net/free-photo/businessman-holding-clipboard-looking-camera_23-2148308596.jpg",
-              stats: [
-                {
-                  label: "Joints Sealed",
-                  value: "4,200 ft"
-                },
-                {
-                  label: "Project Duration",
-                  value: "5 Days"
-                }
-              ]
-            },
-            {
-              company: "Milwaukee Plaza",
-              quote: "Full perimeter sealant replacement and brick restoration across our office complex, completed on schedule with zero operational downtime for tenants.",
-              name: "Grace Price",
-              role: "Facility Director",
-              imageSrc: "https://img.b2bpic.net/free-photo/thoughtful-woman-using-tablet-pc_74855-5173.jpg",
-              stats: [
-                {
-                  label: "Tuckpointing",
-                  value: "1,800 sq ft"
-                },
-                {
-                  label: "Warranty",
-                  value: "Full Coverage"
-                }
-              ]
-            },
-            {
-              company: "Appleton Commercial",
-              quote: "Comprehensive block repair and expansion joint waterproofing for our multi-tenant commercial center in Fox Valley, protecting structural integrity.",
-              name: "Nathan Shaw",
-              role: "Building Supervisor",
-              imageSrc: "https://img.b2bpic.net/free-photo/engineer-helmet-standing-by-factory_1157-35561.jpg",
-              stats: [
-                {
-                  label: "Waterproofing",
-                  value: "100% Sealed"
-                },
-                {
-                  label: "Structure Age",
-                  value: "35 Years"
-                }
-              ]
             }
           ]}
         />
